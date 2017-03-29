@@ -1,0 +1,14 @@
+
+var Person2 = function(first, last, middle) {
+    this.first = first;
+    this.middle = middle;
+    this.last = last;
+};
+
+Person2.prototype = {
+
+    whoAreYou : function() {
+        return this.first + (this.middle ? ' ' + this.middle: '') + ' ' + this.last;
+    }
+
+};
